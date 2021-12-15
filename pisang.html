@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kelompok_06">
+    <meta name="description" content="Muhammad Rafi Aziz, Muhammad Alfis Syah, Adji Muhamad Zidan, Sifa Nur Febriani, Risky Yanto">
+	<link rel="stylesheet" href="CSS/pisang.css">
+	<link rel="stylesheet" href="fontawesome/css/all.css">
+	<title>Fresh Fruit</title>
+</head>
+<body>
+	<!-- navigasi bar -->
+    <!-- by adji muhamad zidan -->
+	<div class="nav">
+		<a href="home.html">
+			<div class="logo">
+				<h1>Fresh Fruit <i class="fas fa-cloud-sun"></i></h1>
+			</div>
+		</a>
+		<div class="menu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<!-- <li><a href="#produk">Product</a></li>
+				<li><a href="#about">About</a></li> -->
+			</ul>
+		</div>
+		<img src="icon/menu.png" alt="hamburger icon" id="icon">
+	</div>
+	<!-- mobile navigations -->
+	<div class="nav-list-mobile">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+		</ul>
+	</div>
+	<!-- checkout section -->
+	<!-- by muhammad rafi aziz -->
+	<div class="checkout">
+		<div class="wrapper">
+			<div class="img-product">
+				<img src="../fotoProduk/gb4.png" alt="Pisang" title="Pisang">
+				<h1>Pisang</h1>
+				<p>IDR 30.000/Kg</p>
+			</div>
+			<div class="form-check">
+				<h2>Checkout</h2>
+				<label for="nama">Nama</label>
+				<br>
+				<input type="text" id="nama" name="nama" placeholder="Nama Pembeli">
+				<br>
+				<label for="alamat">Alamat</label>
+				<br>
+				<textarea name="alamat" rows="5" placeholder="Alamat"></textarea>
+				<br>
+				<label for="no_tlp">No Telp</label>
+				<br>
+				<input type="text" id="no_tlp" name="no_tlp" placeholder="No.Telp">
+				<br>
+				<label for="jml">Berat Apel</label>
+				<br>
+				<input type="" id="jml" name="jml" placeholder="Jumlah Berat">
+				<br>
+				<button type="button" id="pesan">Pesan</button>
+			</div>
+		</div>
+	</div>
+	<br><br><br><br><br><br><br><br>
+	<!-- footer -->
+    <!-- by Muhammad Alfis Syah -->
+    <footer>
+        <div class="footer">
+            <div class="section1">
+                <h3>Fresh Fruit</h3>
+                <p>Fresh Fruit merupakan sebuah platform untuk mencari buah-buahan 
+                segar yang dijual dengan harga terjangkau dan mengedepankan 
+                kualitas buah.</p>
+            </div>
+            <div class="section2">
+                <h3>List Product</h3>
+                <ul>
+                    <li><a href="apel.html">Apel</a></li>
+                    <li><a href="anggur.html">Anggur</a></li>
+                    <li><a href="pisang.html">Pisang</a></li>
+                </ul>
+            </div>
+            <div class="section3">
+                <h3>Group 6</h3>
+                <table>
+                    <tr>
+                        <td>Muhammad Rafi Aziz</td>
+                        <td>(201943501889)</td>
+                    </tr>
+                    <tr>
+                        <td>Adji Muhamad Zidan</td>
+                        <td>(201943501940)</td>
+                    </tr>
+                    <tr>
+                        <td>Muhammad Alfis Syah</td>
+                        <td>(201943501922)</td>
+                    </tr>
+                    <tr>
+                        <td>Sifa Nur Febriani</td>
+                        <td>(201943501947)</td>
+                    </tr>
+                    <tr>
+                        <td>Risky Yanto</td>
+                        <td>(201943501884)</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section4">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><i class="fab fa-instagram"></i> Instagram</li>
+                    <li><i class="fab fa-facebook-square"></i> Facebook</li>
+                    <li><i class="fab fa-twitter"></i> Twitter</li>
+                </ul>
+            </div>
+        </div>
+        <div class='article_footer'>       
+            Copyright© Kelompok 06 - 2021
+        </div>  
+    </footer>
+	<script>
+		// nav bar mobile
+		let iconHamb = document.getElementById('icon');
+		iconHamb.onclick = function() {
+			// memanggil list nav mobile
+			let navbar = document.getElementsByClassName('nav-list-mobile')[0];
+
+			if(navbar.style.display === "none") {
+		    	navbar.style.display = "block";
+		    } 
+
+		    else {
+		        navbar.style.display = "none";
+		    }
+		}
+
+		let pesan = document.getElementById("pesan");
+		pesan.onclick = function() {
+
+			var nama = document.getElementById("nama").value;
+			var no_tlp = document.getElementById("no_tlp").value;
+			var jml_berat = parseInt(document.getElementById("jml").value);
+			
+			let buah = 'Pisang';
+			let hrgPerKg = 30000;
+			let jumlah 	= jml_berat * hrgPerKg;
+			
+			alert("Nama Pembeli : "+ nama +"\nNo. Telp : "+no_tlp+"\nBuah Yang DiPesan " + buah + "\nTotal : " + jumlah);
+		}
+	</script>
+	</body>
+</html>

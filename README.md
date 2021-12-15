@@ -13,11 +13,11 @@ Tema Website Toko Buah
 Konsep Jual Beli Buah Online
 
 Jobdesk :
-Navigasi bar, header cover, web responsive : Adji Muhamad Zidan
-Product Section : Sifa Nur Febriani
-About Section : Risky Yanto
-Footer Section : Muhammad Alfis Syah
-Checkout Page : Muhammad Rafi Aziz
+- Navigasi bar, header cover, web responsive : Adji Muhamad Zidan
+- Product Section : Sifa Nur Febriani
+- About Section : Risky Yanto
+- Footer Section : Muhammad Alfis Syah
+- Checkout Page : Muhammad Rafi Aziz
 
 @kelas R5X - UNINDRA - 2021
 

@@ -417,6 +417,7 @@ footer .article_footer {
 }
 
 /* responsive */
+/* by adji muhamad zidan */
 @media screen and (max-width: 1024px) {
     footer .footer {
         flex-direction: column;
@@ -468,7 +469,6 @@ footer .article_footer {
         height: 160px;
         /* background-color: lightgrey; */
     }
-
 }
 
 @media screen and (max-width: 600px) {

@@ -20,6 +20,7 @@
 	top: 0;
 	z-index: 100;
 }
+
 .nav a {
     text-decoration: none;
     color: white;
@@ -362,7 +363,6 @@ footer .article_footer {
         /* background-color: grey; */
         width: 300px;
     }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -377,7 +377,6 @@ footer .article_footer {
 		/* background-color: lightgrey; */
 		width: 275px;
 	}
-
 }
 
 @media screen and (max-width: 350px) {
